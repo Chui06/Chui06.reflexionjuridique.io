@@ -1,0 +1,275 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+	
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 5%;
+	border-bottom: 1px solid #FFFEFD;
+		
+}
+
+ 
+.logo img{
+	width: 150px;	
+    margin-left: -20px;
+}
+
+.nav_link li {
+	display: inline-block;
+	padding: 20px 20px;
+}
+
+.nav_link li a:hover {
+	color: #FF2628;
+}
+
+li, a, button {
+	font-size: 20px;
+	text-decoration: none;
+	color: #010101;
+	font-weight: 500;
+
+
+}
+button {
+	padding: 10px 20px;
+	background-color:#0c0a0a;
+	border: none;
+	color: #FFFEFD;
+	width: 300px;
+
+}
+
+button:hover {
+	background-color: #161616;
+}
+#banner {
+	background-color: #BC4913;
+	height: 300px;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 120px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFFEFD;
+}
+
+.container img {
+	display: inline-block;
+	width: 200px;
+	height: 219px;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+
+.container {
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+.box_1 {
+	text-align: center;
+}
+.box_2 {
+	text-align: center;
+}
+.box_3{
+	margin-bottom: 100px;
+	text-align: center;
+}
+h2 {
+	text-align: center;
+	padding: 60px;
+}
+.main_content {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 30px;
+   padding-top: 60px;
+   gap: 100px;
+   background-color: #060b11;
+   color: gray;
+   border-top: 6px solid #8C2C23;
+   	
+}
+
+h4 {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+.text , i{
+	padding: 5px;
+}
+
+.copyright h6{
+	text-align: center;
+	background-color:#262626;
+	color: #999898;
+	
+}
+
+.detail {
+	border-left: 1px solid #7e7c7c;
+	padding-left: 30px;
+}
+
+.social li {
+	display: inline-block;
+	
+}
+
+.social a ,li {
+	color: #FFFEFD;
+}
+
+.social li a:hover {
+	color: #999898;
+}
+	
+/* About us page */
+
+label {
+	width: 100px;
+	display: inline-block;
+	padding: 10px;
+}
+
+.form_2 label {
+	width: 400px;
+}
+
+.container_2 { 
+	display: flex;
+	padding-top: 60px;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-bottom: 50px;
+	align-items: flex-start;
+	border: 1px solid rgb(173, 172, 172);
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #BC4913;
+
+}
+
+
+textarea {
+	resize: horizontal;
+	min-width: 320px;
+}
+
+h3 {
+	font-size: 30px;
+	padding-bottom: 60px;
+}
+
+.form_1 {
+	padding-right: 80px;
+	padding-left: 200px;
+	flex: 2;
+	order: 2;
+	
+}
+
+
+
+.form_2 {
+	flex: 2;
+	order: 2;
+}
+
+
+.form_2 button {
+	background-color: rgb(8, 8, 8);
+	border-radius: 0;
+	width: 400px;
+}
+
+
+/* Books Summary */
+
+.title h1{
+	color: #fcf9f9;
+	background-color: #BC4913;
+	padding-bottom: 120px;
+	
+}
+
+.Books_Sum {
+	display: flex;
+	width: 30%;
+	background-color: #fff;
+	padding: 15px;
+	gap: 20px;
+	margin-left: 210px;
+	
+}
+
+
+.column {
+	box-shadow: 0 5px 5px rgba(0,0,0,0.30);
+}
+.card_image {
+	width: 250px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+
+.Books_Sum p {
+	font-size: 18px;
+	line-height: 1.5;
+	height: 90px;
+	overflow: hidden;
+	text-align: justify;
+	padding: 15px;
+}
+
+
+
+.Books_Sum a{
+   display: inline-block;
+   color: #fff;
+   background-color: #060b11;
+   text-decoration: none;
+   border-radius: 8px;
+   margin-top: 15px;
+   margin-left: 70px;
+   font-size: 15px;
+   padding: 10px;
+   margin-bottom: 15px;
+
+}
+
+.Books_Sum a:hover {
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.Books_Sum .showContent p{
+    height: auto;
+}
+.Books_Sum .showContent a.readmore-btn{
+	background-color: #f7090d;
+}
+
+/*Author lists */
+
+.List_author {
+	display: flex;
+}
+
+.title_authors {
+	background-color: #BC4913;
+	padding-bottom: 120px;
+}
+
+
+
