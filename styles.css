@@ -14,7 +14,7 @@ body{
 
 /*Navigation bar*/
 header {
-	background-image: url("./sutterlin-g4d210ab6b_1920.jpg");
+	background-image: url('./sutterlin-g4d210ab6b_1920.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position:  center;
@@ -49,7 +49,7 @@ header {
 	transition: .10s;
 }
 main {
-	background-image: url("./background_page.jpg");
+	background-image: url('./background_page.jpg');
 }
 .function,
 .publication {
