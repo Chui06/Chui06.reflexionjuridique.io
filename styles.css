@@ -1,108 +1,193 @@
 *{
 	margin: 0;
 	padding: 0;	
+	box-sizing: border-box;
+}
+html,
+body{
+	font-size: 18px;
+	max-width: 2000px;
+	line-height: 1.4em;
+	margin: auto;
 }
 
-	
+
+/*Navigation bar*/
 header {
+	background-image: url("../Picture/sutterlin-g4d210ab6b_1920.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position:  center;
 	display: flex;
-	justify-content: space-between;
-	padding: 10px 5%;
-	border-bottom: 1px solid #FFFEFD;
-		
+	justify-content: space-around;
+	margin: auto;
+	
 }
-
- 
-.logo img{
-	width: 150px;	
-    margin-left: -20px;
+.logo img {
+	height: 80px;
+	width: 90px;
+	position: relative;
+	top: 1em;
 }
-
-.nav_link li {
-	display: inline-block;
-	padding: 20px 20px;
+.nav_link {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
-
-.nav_link li a:hover {
-	color: #FF2628;
-}
-
-li, a, button {
-	font-size: 20px;
+.nav_link li, a{
+	display: inline-block;	
+	padding: 7px 13px;
+	text-transform: uppercase;
 	text-decoration: none;
-	color: #010101;
-	font-weight: 500;
-
-
+	border-radius: 3px;
+	font-weight: bold;
+	color: #ffffff;
+	
 }
-button {
-	padding: 10px 20px;
-	background-color:#0c0a0a;
-	border: none;
-	color: #FFFEFD;
-	width: 300px;
-
+.active,a:hover {
+	background: #FF2628;
+	transition: .10s;
 }
-
-button:hover {
-	background-color: #161616;
+main {
+	background-image: url("../Picture/background_page.jpg");
 }
-#banner {
-	background-color: #BC4913;
-	height: 300px;
+.function,
+.publication {
+	margin: 0 20%;
 }
-
 h1 {
 	text-align: center;
-	padding-top: 120px;
-	font-weight: bold;
+	margin: 16px;
+	color: #fafafa;
 	text-transform: uppercase;
-	color: #FFFEFD;
+	font-family: 'Titillium Web', serif;
+	font-weight: bold;
+	font-style: italic;
+} 
+.function p {
+    font-size: 1em;
+	text-align: center;
+	font-style: italic;
+	color: #b9aeae;
+}
+.function p:hover {
+	color: #ffffff;
+}
+.function {
+	position: relative;
+	top: -40px;
+	background-color: #701711;
+	padding: 20px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(133, 42, 42),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
-.container img {
-	display: inline-block;
-	width: 200px;
-	height: 219px;
-	padding-left: 20px;
-	margin-bottom: 30px;
-}
-
-
-.container {
-	margin-left: 0px;
-	margin-right: 0px;
+.publication h2 {
+	text-align: center;
+	font-family: 'Beau Rivage', cursive;
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 2.5em;
+	color: #7B5A39;
+	position: relative;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
 
 }
-.box_1 {
-	text-align: center;
+.publication h2::before {
+	content: "";
+	display: block;
+	width: 340px;
+	height: 5px;
+	background: #060b11;
+	position: absolute;
+	left: 0;
+	top: 50%;
 }
-.box_2 {
-	text-align: center;
+.publication h2::after {
+	content: "";
+	display: block;
+	width: 330px;
+	height: 5px;
+	background: #060b11;
+	position: absolute;
+	right: 0;
+	top: 50%;
 }
-.box_3{
-	margin-bottom: 100px;
+.actualite h2 {
 	text-align: center;
+	font-family: 'Beau Rivage', cursive;
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 2.5rem;
+	color: #7B5A39;
+	position: relative;
+	margin: 1.25rem;
+	
 }
-h2 {
-	text-align: center;
-	padding: 60px;
+
+.actualite h2::before {
+	content: "";
+	display: block;
+	width: 680px;
+	height: 5px;
+	background: #060b11;
+	position: absolute;
+	left: 0;
+	top: 50%;
 }
+.actualite h2::after {
+	content: "";
+	display: block;
+	width: 680px;
+	height: 5px;
+	background: #060b11;
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+.daily_news {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+.daily_news p {
+	width: 500px;
+	margin: 1.25rem;
+	text-align: justify;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.books_title {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.books_title img {
+	height: 200px;
+	width: 180px;
+}
+
 .main_content {
    display: flex;
    justify-content: center;
-   padding-bottom: 30px;
-   padding-top: 60px;
-   gap: 100px;
+   justify-content: space-around;
+   padding-bottom: 1.25rem;
+   padding-top: 1.25rem;
    background-color: #060b11;
-   color: gray;
+   color: rgb(255, 255, 255);
    border-top: 6px solid #8C2C23;
    	
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 1rem;
 	padding-bottom: 20px;
+	text-transform: uppercase;
 }
 .text , i{
 	padding: 5px;
@@ -111,28 +196,19 @@ h4 {
 .copyright h6{
 	text-align: center;
 	background-color:#262626;
-	color: #999898;
-	
-}
-
-.detail {
-	border-left: 1px solid #7e7c7c;
-	padding-left: 30px;
+	color: #999999;
 }
 
 .social li {
-	display: inline-block;
+	display: inline;
 	
 }
 
 .social a ,li {
-	color: #FFFEFD;
+	color: #ffffff;
 }
 
-.social li a:hover {
-	color: #999898;
-}
-	
+
 /* About us page */
 
 label {
@@ -166,7 +242,7 @@ textarea {
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 1.875rem;
 	padding-bottom: 60px;
 }
 
@@ -225,7 +301,7 @@ h3 {
 
 
 .Books_Sum p {
-	font-size: 18px;
+	font-size: 1.125rem;
 	line-height: 1.5;
 	height: 90px;
 	overflow: hidden;
@@ -243,7 +319,7 @@ h3 {
    border-radius: 8px;
    margin-top: 15px;
    margin-left: 70px;
-   font-size: 15px;
+   font-size: 1rem;
    padding: 10px;
    margin-bottom: 15px;
 
@@ -271,5 +347,62 @@ h3 {
 	padding-bottom: 120px;
 }
 
-
-
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	header {
+	  font-size: 12px;
+	  width: 230%;
+	}
+	.logo img {
+		width: 120px;
+	}
+	.nav_link li,a {
+		font-size: 15px;
+	}
+	main {
+		width: 250%;
+	}
+	.publication h2::before {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 5px;
+		background: #060b11;
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+	.publication h2::after {
+		content: "";
+		display: block;
+		width: 110px;
+		height: 5px;
+		background: #060b11;
+		position: absolute;
+		right: 0;
+		top: 50%;
+	}
+	.books_title img {
+		height: 80px;
+		width: 100px;
+	}
+	.actualite h2::before {
+		content: "";
+		display: block;
+		width: 280px;
+		height: 5px;
+		background: #060b11;
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+	.actualite h2::after {
+		content: "";
+		display: block;
+		width: 270px;
+		height: 5px;
+		background: #060b11;
+		position: absolute;
+		right: 0;
+		top: 50%;
+	}
+}
